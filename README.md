@@ -4,7 +4,7 @@ The repository is used as a demo platform for GitHub, Ansible, AWS, GCP an Vorte
 # What are we trying to achieve
 In a couple of simple steps:
 
-1. Edit the "index.html" file within the repository and commit the change
+1. Edit the "/usr/share/nginx/html/index.html" file within the repository and commit the change
 2. GitHub actions will offload a pull and build request to Ansible (or Ansible Tower)
 3. Ansible (Tower) will pull the repository and build a new Vorteil machine using the configuration file
 4. Ansible (Tower) will provision the image (or ask Vorteil to do it) to AWS and GCP
