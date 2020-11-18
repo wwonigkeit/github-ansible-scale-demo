@@ -1,7 +1,11 @@
 ignore = [".vorteilproject"]
 
 [[target]]
-  name = "default"
-  vcfgs = ["default.vcfg"]
+  name = "aws"
+  vcfgs = ["aws.vcfg"]
   icon = "nginx.png"
 
+[[target]]
+  name = "gcp"
+  vcfgs = ["gcp.vcfg"]
+  icon = "nginx.png"
