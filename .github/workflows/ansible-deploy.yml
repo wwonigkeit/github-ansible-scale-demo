@@ -1,0 +1,27 @@
+name: execute the Ansible playbooks
+on:
+  push:
+    branches:
+      - latest
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+
+      - name: ssh pipelines
+        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+        env:
+          WELCOME: "ssh scp ssh pipelines"
+          LASTSSH: "Doing something after copying"
+        with:
+          host: ${{ secrets.ANSIBLE_HOST }}
+          user: ${{ secrets.ANSIBLE_HOST_USER }}
+          key: ${{ secrets.ANSIBLE_HOST_KEY }}
+          connect_timeout: 10s
+          first_ssh: |-
+            ls -la
