@@ -7,12 +7,16 @@
 [[network]]
   ip = "dhcp"
   tcp = ["80","443"]
-  mtu = 9001
-
-[system]
-  #filesystem = "xfs"
 
 [vm]
   cpus = 1
   ram = "256 MiB"
   disk-size = "+32 MiB"
+
+[[logging]]
+  config = ["Name=tcp", "Host=35.201.9.144", "Port=3000", "Format=json"]
+  type = "system"
+
+[[logging]]
+  config = ["Name=tcp", "Host=35.201.9.144", "Port=3000", "Format=json"]
+  type = "kernel"
