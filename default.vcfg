@@ -11,7 +11,7 @@
 [vm]
   cpus = 1
   ram = "256 MiB"
-  disk-size = "+32 MiB"
+  disk-size = "+60 MiB"
 
 [[logging]]
   config = ["Name=tcp", "Host=35.201.9.144", "Port=3000", "Format=json"]
