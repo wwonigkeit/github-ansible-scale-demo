@@ -13,4 +13,6 @@ jobs:
       - name: run playbook
         shell: bash
         run: |
-          ls -la
+          cd /home/ubuntu/playbook
+          ansible-playbook aws-playbook.yml &
+          ansible-playbook gcp-playbook.yml &
