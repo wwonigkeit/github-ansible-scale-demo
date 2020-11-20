@@ -1,8 +1,5 @@
 name: execute the Ansible playbooks
-on:
-  push:
-    branches:
-      - latest
+on: push
 
 jobs:
   build:
