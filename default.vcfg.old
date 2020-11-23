@@ -14,9 +14,9 @@
   disk-size = "+50 MiB"
 
 [[logging]]
-  config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
+  config = ["Name=tcp", "Host=35.201.9.144", "Port=3000", "Format=json"]
   type = "system"
 
 [[logging]]
-  config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
+  config = ["Name=tcp", "Host=35.201.9.144", "Port=3000", "Format=json"]
   type = "kernel"
