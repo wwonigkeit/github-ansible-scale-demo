@@ -15,5 +15,6 @@ jobs:
         run: |
           cd /home/ubuntu/playbook
            ansible-playbook gcp-playbook.yml &
+           ansible-playbook vmw-playbook.yml &
            ansible-playbook aws-playbook.yml
        
